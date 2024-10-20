@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;1,500;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Open Sans';
+}
+
+header{
+    display: flex;
+    min-height: 50px;
+    background-color: rgb(29, 138, 29);
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+.Logo{
+    display: flex;
+}
+
+.Logo img{
+    height: 120px;
+    margin-right: 350px;
+}
+
+nav a{
+    font-weight: 600px;
+    padding-right: 10px;
+}
+
+nav a:hover{
+    color: white;
+}
+
+@media (max-width: 1357px){
+    header{
+        flex-direction: column;
+    }
+
+    nav{
+        padding: 10px 0;
+    }
+}
+
+nav{
+    max-width: 900px;
+    margin: auto;
+    background-color: #333;
+    font-size: 20px;
+    margin-top: 50px;
+}
+
+.menu-horizontal{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+}
+
+.menu-horizontal >li >a{
+    display: block;
+    padding: 15px 20px;
+    color: white;
+    text-decoration: none;
+}
+
+.menu-horizontal >li:hover{
+    background-color: greenyellow;
+}
+
+.menu-vertical{
+    position: absolute;
+    display: none;
+    list-style: none;
+    width: 200px;
+    background-color:skyblue;
+}
+
+.menu-horizontal li:hover .menu-vertical{
+    display: block;
+}
+.menu-vertical li:hover{
+    background-color: black;
+}
